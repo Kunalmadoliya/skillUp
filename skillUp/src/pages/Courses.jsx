@@ -3,7 +3,8 @@ import React from 'react'
 const Courses = () => {
   return (
     <>
-      <p>courses</p>
+     <div className='min-h-screen flex items-center justify-center  space-y-5 px-4'></div>
+
     </>
   )
 }

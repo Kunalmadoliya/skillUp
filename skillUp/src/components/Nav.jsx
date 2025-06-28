@@ -1,16 +1,80 @@
-import React from "react";
+import ShinyText from "./ShinyText";
 import {NavLink} from "react-router-dom";
+import {IoSchoolOutline} from "react-icons/io5";
 
 const Nav = () => {
   return (
-    <>
-      <nav className="flex border">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/courses">Courses</NavLink>
-        <NavLink to="/login">Login</NavLink>
-        <NavLink to="/signup">Register</NavLink>
-      </nav>
-    </>
+    <nav className="flex items-center justify-between px-8 md:px-16 py-5 backdrop-blur  border-b border-gray-500">
+      {/* Logo */}
+      <div className="flex items-center space-x-3">
+        <div className="bg-gradient-to-r from-purple-600 to-indigo-600 p-2 rounded-md">
+          <IoSchoolOutline className="text-white text-2xl" />
+        </div>
+        <ShinyText
+          text="SkillUp Hub"
+          disabled={false}
+          speed={3}
+          className="text-2xl font-semibold"
+        />
+      </div>
+
+      {/* Links */}
+      <div className="flex items-center space-x-5">
+        <NavLink
+          to="/courses"
+          className={({isActive}) =>
+            `px-3 py-2 rounded-md text-sm font-medium transition ${
+              isActive
+                ? "bg-gradient-to-r from-purple-600 to-indigo-600 text-white"
+                : "text-gray-300 hover:text-white hover:bg-gray-700"
+            }`
+          }
+        >
+          <ShinyText
+            text="Browse Courses"
+            disabled={false}
+            speed={3}
+            className="font-semibold text-amber-300"
+          />
+        </NavLink>
+
+        <NavLink
+          to="/login"
+          className={({isActive}) =>
+            `px-3 py-2 rounded-md text-sm font-medium transition ${
+              isActive
+                ? "bg-gradient-to-r from-purple-600 to-indigo-600 text-white"
+                : "text-gray-300 hover:text-white hover:bg-gray-700"
+            }`
+          }
+        >
+          <ShinyText
+            text="Login"
+            disabled={false}
+            speed={3}
+            className="font-semibold"
+          />
+        </NavLink>
+
+        <NavLink
+          to="/signup"
+          className={({isActive}) =>
+            `px-3 py-2 rounded-md text-sm font-medium transition ${
+              isActive
+                ? "bg-gradient-to-r from-purple-600 to-indigo-600 text-white"
+                : "text-gray-300 hover:text-white hover:bg-gray-700"
+            }`
+          }
+        >
+          <ShinyText
+            text="Sign Up"
+            disabled={false}
+            speed={3}
+            className="font-semibold"
+          />
+        </NavLink>
+      </div>
+    </nav>
   );
 };
 

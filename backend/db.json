@@ -48,6 +48,22 @@
       "password": "sdadf",
       "confirmPassword": "dfsafd",
       "role": "user"
+    },
+    {
+      "id": "laCE4-r0zz2zsFmV7Efhc",
+      "fullName": "kunal",
+      "email": "metagodsesports@gmail.com",
+      "password": "saadasd",
+      "confirmPassword": "asdasdasdasda",
+      "role": "user"
+    },
+    {
+      "id": "XEUH3LV9hKERrzJiJkJD6",
+      "fullName": "kunal",
+      "email": "madoliyakunal2005@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "role": "user"
     }
   ],
   "courses": [

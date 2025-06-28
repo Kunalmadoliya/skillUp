@@ -2,6 +2,7 @@ import {useNavigate} from "react-router-dom";
 import {useForm} from "react-hook-form";
 import {nanoid} from "nanoid";
 import {asyncregisteruser} from "../store/actions/userActions";
+import {IoBookSharp} from "react-icons/io5";
 import {useDispatch} from "react-redux";
 import { toast } from "react-toastify";
 
@@ -27,10 +28,14 @@ const SignUp = () => {
 
   return (
     <>
-      <div className="flex items-center  justify-center min-h-screen bg-gradient-to-b px-4">
-        <div className="w-full border border-gray-200  max-w-md rounded-lg p-8">
+      <div className="flex items-center justify-center min-h-screen bg-gradient-to-b px-4 max-w-screen box-border overflow-x-hidden">
+        <div className="border border-gray-200  max-w-md rounded-lg p-8">
           <div className="flex flex-col items-center mb-6">
-            <div className="p-3 rounded-md"></div>
+            <div className="flex justify-center mb-3">
+          <div className="bg-white rounded-md p-3">
+            <IoBookSharp className="text-4xl" />
+          </div>
+        </div>
             <h2 className="text-2xl font-semibold text-white mt-4">
               Create Your Account
             </h2>

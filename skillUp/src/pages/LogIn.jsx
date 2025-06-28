@@ -1,11 +1,12 @@
 import {useForm} from "react-hook-form";
 import {useNavigate} from "react-router-dom";
 import {IoBookSharp} from "react-icons/io5";
-import {nanoid} from "nanoid";
-import {useState} from "react";
+import {useDispatch} from "react-redux";
+import {asynclogindetails} from "../store/actions/userActions";
 
 const LogIn = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const {
     register,
@@ -14,10 +15,10 @@ const LogIn = () => {
     reset,
   } = useForm();
 
-  const loginUser = (user) => {
-    user.id = nanoid();
-    console.log(user);
-
+  const loginUser = (users) => {
+    console.log(users);
+    
+    dispatch(asynclogindetails(users));
     reset();
   };
 
@@ -44,7 +45,7 @@ const LogIn = () => {
             Email
           </label>
           <input
-            className="w-full rounded border border-gray-600 bg-gray-700 text-white p-2 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full rounded border border-gray-600 text-white p-2 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             {...register("Email", {required: "Email is required"})}
             placeholder="Enter your email"
             type="email"
@@ -59,7 +60,7 @@ const LogIn = () => {
             Password
           </label>
           <input
-            className="w-full rounded border border-gray-600 bg-gray-700 text-white p-2 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full rounded border border-gray-600 text-white p-2 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             {...register("Password", {required: "Password is required"})}
             type="password"
             placeholder="Enter your password"
