@@ -2,8 +2,9 @@ import React from "react";
 import {Route, Routes} from "react-router-dom";
 import Home from "../pages/Home";
 import LogIn from "../pages/LogIn";
-import Register from "../pages/Register";
+
 import Courses from "../pages/Courses";
+import SignUp from "../pages/SignUp";
 
 const MainRoutes = () => {
   return (
@@ -12,7 +13,7 @@ const MainRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/login" element={<LogIn />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/signup" element={<SignUp/>} />
       </Routes>
     </>
   );
