@@ -18,7 +18,7 @@
       "role": "admin",
       "createdAt": "2024-01-10T10:00:00Z"
     },
-  
+
     {
       "id": "XEUH3LV9hKERrzJiJkJD6",
       "fullName": "kunal",
@@ -41,221 +41,8 @@
       "duration": "40 hours",
       "price": 89.99,
       "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=250&fit=crop&crop=center",
-      "tags": [
-        "React",
-        "JavaScript",
-        "Frontend"
-      ],
+      "tags": ["React", "JavaScript", "Frontend"],
       "createdAt": "2024-01-01T10:00:00Z"
-    },
-    {
-      "id": "2",
-      "title": "Python for Data Science",
-      "description": "Learn Python programming with focus on data analysis, visualization, and machine learning.",
-      "instructor": "Dr. Michael Chen",
-      "category": "Data Science",
-      "level": "Beginner",
-      "rating": 4.6,
-      "reviewCount": 890,
-      "duration": "35 hours",
-      "price": 79.99,
-      "image": "https://images.unsplash.com/photo-1526379879527-8559ecfcaec0?w=400&h=250&fit=crop&crop=center",
-      "tags": [
-        "Python",
-        "Data Science",
-        "Machine Learning"
-      ],
-      "createdAt": "2024-01-05T10:00:00Z"
-    },
-    {
-      "id": "3",
-      "title": "Advanced Node.js Development",
-      "description": "Build scalable backend applications with Node.js, Express, and MongoDB.",
-      "instructor": "Alex Rodriguez",
-      "category": "Backend Development",
-      "level": "Advanced",
-      "rating": 4.9,
-      "reviewCount": 567,
-      "duration": "50 hours",
-      "price": 99.99,
-      "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=400&h=250&fit=crop&crop=center",
-      "tags": [
-        "Node.js",
-        "Express",
-        "MongoDB"
-      ],
-      "createdAt": "2024-01-08T10:00:00Z"
-    },
-    {
-      "id": "4",
-      "title": "UI/UX Design Fundamentals",
-      "description": "Learn design principles, user research, prototyping, and modern design tools.",
-      "instructor": "Emma Wilson",
-      "category": "Design",
-      "level": "Beginner",
-      "rating": 4.7,
-      "reviewCount": 1100,
-      "duration": "25 hours",
-      "price": 69.99,
-      "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=250&fit=crop&crop=center",
-      "tags": [
-        "UI/UX",
-        "Design",
-        "Figma"
-      ],
-      "createdAt": "2024-01-12T10:00:00Z"
-    },
-    {
-      "id": "5",
-      "title": "DevOps with Docker & Kubernetes",
-      "description": "Master containerization and orchestration for modern application deployment.",
-      "instructor": "James Thompson",
-      "category": "DevOps",
-      "level": "Advanced",
-      "rating": 4.5,
-      "reviewCount": 445,
-      "duration": "45 hours",
-      "price": 109.99,
-      "image": "https://images.unsplash.com/photo-1605745341112-85968b19335b?w=400&h=250&fit=crop&crop=center",
-      "tags": [
-        "Docker",
-        "Kubernetes",
-        "DevOps"
-      ],
-      "createdAt": "2024-01-18T10:00:00Z"
-    },
-    {
-      "id": "6",
-      "title": "Mobile App Development with Flutter",
-      "description": "Build cross-platform mobile apps using Flutter and Dart programming language.",
-      "instructor": "Lisa Park",
-      "category": "Mobile Development",
-      "level": "Intermediate",
-      "rating": 4.4,
-      "reviewCount": 678,
-      "duration": "38 hours",
-      "price": 84.99,
-      "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop&crop=center",
-      "tags": [
-        "Flutter",
-        "Dart",
-        "Mobile"
-      ],
-      "createdAt": "2024-01-20T10:00:00Z"
-    },
-    {
-      "id": "7",
-      "title": "Machine Learning with TensorFlow",
-      "description": "Deep dive into machine learning algorithms and neural networks using TensorFlow.",
-      "instructor": "Dr. Raj Patel",
-      "category": "Data Science",
-      "level": "Advanced",
-      "rating": 4.8,
-      "reviewCount": 723,
-      "duration": "55 hours",
-      "price": 119.99,
-      "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop&crop=center",
-      "tags": [
-        "Machine Learning",
-        "TensorFlow",
-        "AI"
-      ],
-      "createdAt": "2024-01-22T10:00:00Z"
-    },
-    {
-      "id": "8",
-      "title": "Full Stack JavaScript Development",
-      "description": "Complete web development course covering frontend and backend with JavaScript.",
-      "instructor": "Mark Stevens",
-      "category": "Web Development",
-      "level": "Intermediate",
-      "rating": 4.6,
-      "reviewCount": 934,
-      "duration": "60 hours",
-      "price": 129.99,
-      "image": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=400&h=250&fit=crop&crop=center",
-      "tags": [
-        "JavaScript",
-        "Full Stack",
-        "MERN"
-      ],
-      "createdAt": "2024-01-25T10:00:00Z"
-    },
-    {
-      "id": "9",
-      "title": "Cybersecurity Fundamentals",
-      "description": "Learn essential cybersecurity concepts, threat analysis, and security best practices.",
-      "instructor": "Jennifer Lee",
-      "category": "Security",
-      "level": "Beginner",
-      "rating": 4.5,
-      "reviewCount": 512,
-      "duration": "30 hours",
-      "price": 89.99,
-      "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=250&fit=crop&crop=center",
-      "tags": [
-        "Cybersecurity",
-        "Security",
-        "Networking"
-      ],
-      "createdAt": "2024-01-28T10:00:00Z"
-    },
-    {
-      "id": "10",
-      "title": "AWS Cloud Architecture",
-      "description": "Master Amazon Web Services and learn to design scalable cloud solutions.",
-      "instructor": "David Kumar",
-      "category": "Cloud Computing",
-      "level": "Intermediate",
-      "rating": 4.7,
-      "reviewCount": 856,
-      "duration": "42 hours",
-      "price": 99.99,
-      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop&crop=center",
-      "tags": [
-        "AWS",
-        "Cloud",
-        "Architecture"
-      ],
-      "createdAt": "2024-02-01T10:00:00Z"
-    },
-    {
-      "id": "11",
-      "title": "Digital Marketing Mastery",
-      "description": "Complete guide to digital marketing including SEO, social media, and analytics.",
-      "instructor": "Rachel Green",
-      "category": "Marketing",
-      "level": "Beginner",
-      "rating": 4.4,
-      "reviewCount": 1203,
-      "duration": "28 hours",
-      "price": 74.99,
-      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&crop=center",
-      "tags": [
-        "Digital Marketing",
-        "SEO",
-        "Social Media"
-      ],
-      "createdAt": "2024-02-05T10:00:00Z"
-    },
-    {
-      "id": "12",
-      "title": "Blockchain Development",
-      "description": "Learn blockchain technology and smart contract development with Solidity.",
-      "instructor": "Chris Anderson",
-      "category": "Blockchain",
-      "level": "Advanced",
-      "rating": 4.6,
-      "reviewCount": 387,
-      "duration": "48 hours",
-      "price": 139.99,
-      "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=250&fit=crop&crop=center",
-      "tags": [
-        "Blockchain",
-        "Solidity",
-        "Web3"
-      ],
-      "createdAt": "2024-02-08T10:00:00Z"
     }
   ],
   "reviews": [
@@ -266,14 +53,6 @@
       "rating": 5,
       "comment": "Excellent course! The instructor explains concepts clearly and the projects are very practical.",
       "createdAt": "2024-01-25T10:00:00Z"
-    },
-    {
-      "id": "2",
-      "courseId": 2,
-      "userId": 1,
-      "rating": 4,
-      "comment": "Great introduction to Python for data science. Could use more advanced topics.",
-      "createdAt": "2024-01-28T10:00:00Z"
     }
   ],
   "userCourses": [
@@ -285,38 +64,6 @@
       "progress": 100,
       "enrolledAt": "2024-01-15T10:00:00Z",
       "completedAt": "2024-01-25T10:00:00Z"
-    },
-    {
-      "id": "2",
-      "userId": 1,
-      "courseId": 2,
-      "status": "in-progress",
-      "progress": 65,
-      "enrolledAt": "2024-01-20T10:00:00Z"
-    },
-    {
-      "id": "3",
-      "userId": 1,
-      "courseId": 3,
-      "status": "wishlist",
-      "progress": 0,
-      "enrolledAt": "2024-01-28T10:00:00Z"
-    },
-    {
-      "id": "4",
-      "userId": 1,
-      "courseId": 4,
-      "status": "wishlist",
-      "progress": 0,
-      "enrolledAt": "2024-02-01T10:00:00Z"
-    },
-    {
-      "id": "5",
-      "userId": 1,
-      "courseId": 5,
-      "status": "in-progress",
-      "progress": 30,
-      "enrolledAt": "2024-02-05T10:00:00Z"
     }
   ],
   "notes": [
@@ -327,14 +74,6 @@
       "title": "React Hooks Notes",
       "content": "useState and useEffect are the most commonly used hooks. Remember to include dependencies in useEffect array.",
       "createdAt": "2024-01-22T10:00:00Z"
-    },
-    {
-      "id": "2",
-      "userId": 1,
-      "courseId": 2,
-      "title": "Pandas Basics",
-      "content": "DataFrame.head() shows first 5 rows. Use .describe() for statistical summary.",
-      "createdAt": "2024-01-26T10:00:00Z"
     }
   ],
   "purchases": [
@@ -344,20 +83,6 @@
       "courseId": 1,
       "purchaseDate": "2024-01-15T10:00:00Z",
       "amount": 89.99
-    },
-    {
-      "id": "2",
-      "userId": 1,
-      "courseId": 2,
-      "purchaseDate": "2024-01-20T10:00:00Z",
-      "amount": 79.99
-    },
-    {
-      "id": "3",
-      "userId": 1,
-      "courseId": 5,
-      "purchaseDate": "2024-02-05T10:00:00Z",
-      "amount": 109.99
     }
   ]
 }

@@ -5,7 +5,7 @@ import LogIn from "../pages/LogIn";
 
 import Courses from "../pages/Courses";
 import SignUp from "../pages/SignUp";
-import {useSelector} from "react-redux";
+
 import CreateProducts from "../pages/admin/CreateProducts";
 
 const MainRoutes = () => {
@@ -15,7 +15,7 @@ const MainRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/login" element={<LogIn />} />
-
+        <Route path="/admin/create-product" element={<CreateProducts />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>
     </>

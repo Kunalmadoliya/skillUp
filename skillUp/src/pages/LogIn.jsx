@@ -16,7 +16,7 @@ const LogIn = () => {
   } = useForm();
 
   const loginUser = (users) => {
-    console.log(users);
+    users.role = "user"
     dispatch(asynclogindetails(users));
     reset();
   };
