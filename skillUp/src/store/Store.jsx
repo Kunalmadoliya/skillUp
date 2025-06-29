@@ -6,7 +6,7 @@ import NotesSlice from "../store/reducers/NotesSlice";
 import PurchaseSlice from "../store/reducers/PurchaseSlice";
 import UserCoursesSlice from "../store/reducers/UserCoursesSlice";
 
-export const store = configureStore({
+export const store = configureStore({ 
   reducer: {
     usersReducer: UserSlice,
     coursesReducer: CoursesSlice,

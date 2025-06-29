@@ -1,13 +1,23 @@
 import {toast} from "react-toastify";
 import axios from "../../api/api";
+import {loaduser} from "../reducers/UserSlice"
 
 
-
+export const asynccurrentuser = () =>async(dispatch ,getState) =>{
+  try {
+    const users = JSON.parse(localStorage.getItem("user"))
+    if (users) dispatch(loaduser(users))
+   
+    
+  } catch (error) {
+    toast.error("Not Logged in ")
+  }
+}
 
 export const asynclogindetails = (users) => async (dispatch, getState) => {
   try {
     const {data} = await axios.get(
-      `/users?email=${users.Email}&password=${users.Password}`
+      `/users?email=${users.email}&password=${users.password}`
     );
     toast.success("Logged In!");
     localStorage.setItem("user", JSON.stringify(data[0]));
@@ -18,11 +28,10 @@ export const asynclogindetails = (users) => async (dispatch, getState) => {
 
 
 
-
 export const asynclogoutdetails = (users) => async (dispatch, getState) => {
   try {
     toast.success("Logged Out!");
-    localStorage.removeItem("user", ""); 
+    localStorage.removeItem("user"); 
   } catch (error) {
     toast.error("wrong");
   }

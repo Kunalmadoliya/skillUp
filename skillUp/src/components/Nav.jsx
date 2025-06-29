@@ -4,7 +4,7 @@ import {IoSchoolOutline} from "react-icons/io5";
 
 const Nav = () => {
   return (
-    <nav className="flex items-center justify-between px-8 md:px-16 py-5 backdrop-blur  border-b border-gray-500">
+    <nav className="flex items-center justify-between px-8 md:px-16 py-5 backdrop-blur border-b border-gray-700 bg-[#0d1117]/90">
       {/* Logo */}
       <div className="flex items-center space-x-3">
         <div className="bg-gradient-to-r from-purple-600 to-indigo-600 p-2 rounded-md">
@@ -19,7 +19,7 @@ const Nav = () => {
       </div>
 
       {/* Links */}
-      <div className="flex items-center space-x-5">
+      <div className="flex items-center space-x-4">
         <NavLink
           to="/courses"
           className={({isActive}) =>
@@ -34,7 +34,7 @@ const Nav = () => {
             text="Browse Courses"
             disabled={false}
             speed={3}
-            className="font-semibold text-amber-300"
+            className="font-semibold"
           />
         </NavLink>
 

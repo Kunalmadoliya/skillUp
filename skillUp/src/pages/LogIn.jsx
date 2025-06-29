@@ -1,8 +1,8 @@
-import {useForm} from "react-hook-form";
-import {useNavigate} from "react-router-dom";
-import {IoBookSharp} from "react-icons/io5";
-import {useDispatch} from "react-redux";
-import {asynclogindetails} from "../store/actions/userActions";
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+import { IoBookSharp } from "react-icons/io5";
+import { useDispatch } from "react-redux";
+import { asynclogindetails } from "../store/actions/userActions";
 
 const LogIn = () => {
   const navigate = useNavigate();
@@ -11,83 +11,76 @@ const LogIn = () => {
   const {
     register,
     handleSubmit,
-    formState: {errors},
+    formState: { errors },
     reset,
   } = useForm();
 
   const loginUser = (users) => {
     console.log(users);
-    
     dispatch(asynclogindetails(users));
     reset();
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center  space-y-5 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800 px-4">
       <form
-        className=" space-y-3 border border-gray-200 w-full max-w-md rounded-lg p-6 shadow-lg"
+        className="space-y-6 w-full max-w-md bg-gray-900 border border-gray-700 rounded-xl p-8 shadow-2xl"
         onSubmit={handleSubmit(loginUser)}
       >
         <div className="flex justify-center mb-4">
-          <div className="bg-white rounded-md p-3">
-            <IoBookSharp className="text-4xl" />
+          <div className="bg-gray-800 rounded-full p-4">
+            <IoBookSharp className="text-3xl text-blue-500" />
           </div>
         </div>
-        <h2 className="text-center text-2xl font-bold text-white mb-2">
+
+        <h2 className="text-center text-2xl font-bold text-white">
           Welcome Back
         </h2>
-        <p className="text-center text-gray-400 mb-6">
-          Sign in to your SkillUp Hub account to continue your learning journey
+        <p className="text-center text-gray-400">
+          Sign in to your SkillUp Hub account
         </p>
 
-        <div className="mb-5">
-          <label className="block font-semibold text-gray-300 mb-3">
-            Email
-          </label>
+        <div>
+          <label className="block text-gray-300 font-medium mb-1">Email</label>
           <input
-            className="w-full rounded border border-gray-600 text-white p-2 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            {...register("Email", {required: "Email is required"})}
-            placeholder="Enter your email"
+            {...register("email", { required: "Email is required" })}
             type="email"
+            placeholder="Enter your email"
+            className="w-full border border-gray-700 bg-gray-800 text-white rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-500"
           />
-          {errors.Email && (
-            <p className="text-red-500 text-sm mt-1">{errors.Email.message}</p>
+          {errors.email && (
+            <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
           )}
         </div>
 
-        <div className="mb-6 relative">
-          <label className="block font-semibold text-gray-300 mb-3">
+        <div>
+          <label className="block text-gray-300 font-medium mb-1">
             Password
           </label>
           <input
-            className="w-full rounded border border-gray-600 text-white p-2 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            {...register("Password", {required: "Password is required"})}
+            {...register("password", { required: "Password is required" })}
             type="password"
             placeholder="Enter your password"
+            className="w-full border border-gray-700 bg-gray-800 text-white rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-500"
           />
-
-          {errors.Password && (
-            <p className="text-red-500 text-sm mt-1">
-              {errors.Password.message}
-            </p>
+          {errors.password && (
+            <p className="text-red-500 text-sm mt-1">{errors.password.message}</p>
           )}
         </div>
 
-        <div className="mb-6 font-semibold bg-gray-700 rounded p-3 text-sm text-gray-300">
+        <div className="bg-gray-800 border border-gray-700 rounded-lg p-3 text-sm text-gray-400">
           <p className="mb-1 font-semibold">Demo Credentials:</p>
           <p>
-            <span className="font-semibold">User:</span> john@example.com /
-            password123
+            <span className="font-semibold">User:</span> john@example.com / password123
           </p>
           <p>
-            <span className="font-semibold">Admin:</span> admin@skillup.com /
-            admin123
+            <span className="font-semibold">Admin:</span> admin@skillup.com / admin123
           </p>
         </div>
 
         <button
           type="submit"
-          className="w-full bg-white text-gray-900 font-semibold py-2 rounded hover:bg-gray-200 transition"
+          className="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition"
         >
           Sign In
         </button>
@@ -97,7 +90,7 @@ const LogIn = () => {
           <button
             type="button"
             onClick={() => navigate("/signup")}
-            className="text-white underline hover:text-blue-400"
+            className="text-blue-400 font-semibold hover:underline"
           >
             Sign up
           </button>

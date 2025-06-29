@@ -1,7 +1,14 @@
+import {useEffect} from "react";
 import Nav from "./components/Nav";
 import MainRoutes from "./routes/MainRoutes";
+import {asynccurrentuser} from "./store/actions/userActions";
+import {useDispatch} from "react-redux";
 
 const App = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(asynccurrentuser());
+  }, []);
   return (
     <>
       {/* Fixed navbar container */}
