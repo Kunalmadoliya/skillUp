@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -8,6 +8,8 @@ import {asyncCreateCourse} from "../../store/actions/courseAction"
 const CreateCourse = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
+
 
   const {
     register,

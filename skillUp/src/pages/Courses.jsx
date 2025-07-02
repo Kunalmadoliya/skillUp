@@ -1,20 +1,21 @@
 import React from "react";
-import {useSelector} from "react-redux";
+import { useSelector } from "react-redux";
+import CoursesCard from "../components/CoursesCard";
 
 const Courses = () => {
   const courses = useSelector((state) => state.coursesReducer.courses);
-  console.log("COURSES:", courses);
+  console.log(courses);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center space-y-5 px-4">
+    <div className="min-h-screen w-full px-4 py-6">
       {courses.length > 0 ? (
-        courses.map((course) => (
-          <div key={course.id} className="p-4 border border-gray-300 rounded">
-            {course.title}
-          </div>
-        ))
+        <div className="flex flex-wrap gap-6 justify-center">
+          {courses.map((course, index) => (
+            <CoursesCard key={index} course={course} />
+          ))}
+        </div>
       ) : (
-        <p>No courses loaded.</p>
+        <p className="text-white text-center">No courses loaded.</p>
       )}
     </div>
   );

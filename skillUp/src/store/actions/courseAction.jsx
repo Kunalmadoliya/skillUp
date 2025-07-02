@@ -1,10 +1,11 @@
 import axios from "../../api/api";
-import loadCourses from "../reducers/CoursesSlice";
+import { loadcourses } from "../reducers/CoursesSlice";
+
 
 export const asyncLoadCourse = () => async (dispatch, getState) => {
   try {
     const {data} = await axios.get("/courses");
-    dispatch(loadCourses(data));
+    dispatch(loadcourses(data))
   } catch (error) {}
 };
 export const asyncCreateCourse = (courses) => async (dispatch, getState) => {
