@@ -1,11 +1,10 @@
 import ShinyText from "./ShinyText";
-import { NavLink } from "react-router-dom";
-import { IoSchoolOutline } from "react-icons/io5";
-import { useSelector } from "react-redux";
+import {NavLink} from "react-router-dom";
+import {IoSchoolOutline} from "react-icons/io5";
+import {useSelector} from "react-redux";
 
 const Nav = () => {
   const user = useSelector((state) => state.usersReducer.user);
-  console.log(user);
 
   return (
     <nav className="flex items-center justify-between px-8 md:px-16 py-5 backdrop-blur border-b border-gray-700 bg-[#0d1117]/90">
@@ -26,7 +25,7 @@ const Nav = () => {
       <div className="flex items-center space-x-4">
         <NavLink
           to="/courses"
-          className={({ isActive }) =>
+          className={({isActive}) =>
             `px-3 py-2 rounded-md text-sm font-medium transition ${
               isActive
                 ? "bg-gradient-to-r from-purple-600 to-indigo-600 text-white"
@@ -45,7 +44,7 @@ const Nav = () => {
         {user.role === "admin" ? (
           <NavLink
             to="/admin/create-product"
-            className={({ isActive }) =>
+            className={({isActive}) =>
               `px-3 py-2 rounded-md text-sm font-medium transition ${
                 isActive
                   ? "bg-gradient-to-r from-purple-600 to-indigo-600 text-white"
@@ -64,7 +63,7 @@ const Nav = () => {
           <>
             <NavLink
               to="/login"
-              className={({ isActive }) =>
+              className={({isActive}) =>
                 `px-3 py-2 rounded-md text-sm font-medium transition ${
                   isActive
                     ? "bg-gradient-to-r from-purple-600 to-indigo-600 text-white"
@@ -82,7 +81,7 @@ const Nav = () => {
 
             <NavLink
               to="/signup"
-              className={({ isActive }) =>
+              className={({isActive}) =>
                 `px-3 py-2 rounded-md text-sm font-medium transition ${
                   isActive
                     ? "bg-gradient-to-r from-purple-600 to-indigo-600 text-white"

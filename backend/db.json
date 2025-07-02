@@ -18,7 +18,6 @@
       "role": "admin",
       "createdAt": "2024-01-10T10:00:00Z"
     },
-
     {
       "id": "XEUH3LV9hKERrzJiJkJD6",
       "fullName": "kunal",
@@ -41,8 +40,132 @@
       "duration": "40 hours",
       "price": 89.99,
       "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=250&fit=crop&crop=center",
-      "tags": ["React", "JavaScript", "Frontend"],
+      "tags": [
+        "React",
+        "JavaScript",
+        "Frontend"
+      ],
       "createdAt": "2024-01-01T10:00:00Z"
+    },
+    {
+      "id": "4e79",
+      "title": "fadfs",
+      "instructor": "sdfsdf",
+      "description": "sdfsdf",
+      "category": "Development",
+      "level": "Beginner",
+      "duration": "sdfsdf",
+      "price": "42434",
+      "img": "34534",
+      "tags": "453453"
+    },
+    {
+      "id": "663d",
+      "title": "scacasca",
+      "instructor": "cascasc",
+      "description": "cascasca",
+      "category": "Development",
+      "level": "Intermediate",
+      "duration": "ascasc",
+      "price": "3553453",
+      "img": "34534",
+      "tags": "54345"
+    },
+    {
+      "id": "a234",
+      "title": "sfsd",
+      "instructor": "sdfs",
+      "description": "dsfsdf",
+      "category": "Development",
+      "level": "Beginner",
+      "duration": "fsdfs",
+      "price": "22",
+      "img": "4",
+      "tags": "2"
+    },
+    {
+      "id": "6afa",
+      "title": "fsdfs",
+      "instructor": "sdfssd",
+      "description": "fdsf",
+      "category": "Development",
+      "level": "Beginner",
+      "duration": "sdfsdf",
+      "price": "252",
+      "img": "",
+      "tags": "242"
+    },
+    {
+      "id": "3cee",
+      "title": "fgf",
+      "instructor": "fdgd",
+      "description": "dfgdg",
+      "category": "Development",
+      "level": "Intermediate",
+      "duration": "dfgdfg",
+      "price": "0121",
+      "img": "2",
+      "tags": "2"
+    },
+    {
+      "id": "d468",
+      "title": "hgdfdh",
+      "instructor": "dfhdfhd",
+      "description": "dfhdfd",
+      "category": "Development",
+      "level": "Intermediate",
+      "duration": "dfhdfh",
+      "price": "4523",
+      "img": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "tags": "43"
+    },
+    {
+      "id": "50ba",
+      "title": "zxZx",
+      "instructor": "xZx",
+      "description": "Zx",
+      "category": "Development",
+      "level": "Beginner",
+      "duration": "ZxZx",
+      "price": "36343",
+      "img": "3453453",
+      "tags": "345345"
+    },
+    {
+      "id": "81c6",
+      "title": "gdgf",
+      "instructor": "fsfsdf",
+      "description": "dfgdfg",
+      "category": "Development",
+      "level": "Beginner",
+      "duration": "dfgd",
+      "price": "24",
+      "img": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "tags": "gdfgfd"
+    },
+    {
+      "id": "ce1e",
+      "title": "ffsdfsdf",
+      "instructor": "sdfsdf",
+      "description": "fdsdf",
+      "category": "Design",
+      "level": "Beginner",
+      "duration": "fsdfsd",
+      "price": "121",
+      "img": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "tags": "hdfggs"
+    },
+    {
+      "id": "354f",
+      "title": "dfsdf",
+      "instructor": "sdfsd",
+      "description": "dsfs",
+      "category": "Development",
+      "level": "Beginner",
+      "duration": "sdf",
+      "price": "12313",
+      "img": "21123",
+      "tags": "213"
     }
   ],
   "reviews": [

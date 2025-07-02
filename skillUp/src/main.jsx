@@ -21,7 +21,6 @@ createRoot(document.getElementById("root")).render(
         draggable
         pauseOnHover
         theme="dark"
-      
       />
     </BrowserRouter>
   </Provider>

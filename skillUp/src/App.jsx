@@ -3,11 +3,13 @@ import Nav from "./components/Nav";
 import MainRoutes from "./routes/MainRoutes";
 import {asynccurrentuser} from "./store/actions/userActions";
 import {useDispatch} from "react-redux";
+import { asyncLoadCourse } from "./store/actions/courseAction";
 
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(asynccurrentuser());
+    dispatch(asyncLoadCourse())
   }, []);
   return (
     <>
