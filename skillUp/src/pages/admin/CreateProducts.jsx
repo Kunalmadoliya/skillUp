@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import {asyncCreateCourse} from "../../store/actions/courseAction"
+import { nanoid } from "nanoid";
 
 const CreateCourse = () => {
   const navigate = useNavigate();
@@ -19,10 +20,14 @@ const CreateCourse = () => {
   } = useForm();
 
   const onSubmit = (courses) => {
+    courses.id = nanoid()
     dispatch(asyncCreateCourse(courses));
     toast.success("Course Created");
     navigate("/courses");
     reset();
+
+    console.log(courses);
+    
   };
 
   return (

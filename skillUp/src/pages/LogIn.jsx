@@ -18,6 +18,7 @@ const LogIn = () => {
   const loginUser = (users) => {
     users.role = "user"
     dispatch(asynclogindetails(users));
+    navigate("/courses")
     reset();
   };
 
